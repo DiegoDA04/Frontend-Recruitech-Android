@@ -11,6 +11,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import pe.edu.notcodingdevs.recruitech.ui.theme.Grey20
 import pe.edu.notcodingdevs.recruitech.ui.theme.Grey40
@@ -34,6 +35,7 @@ fun RecruitechTextField(
             input.value = it
         },
         shape = RoundedCornerShape(8.dp),
+        textStyle = MaterialTheme.typography.labelMedium,
         colors = TextFieldDefaults.outlinedTextFieldColors(
             textColor = Grey40,
             containerColor = Color.White,
