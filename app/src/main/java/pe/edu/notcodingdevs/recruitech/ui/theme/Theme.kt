@@ -64,7 +64,7 @@ fun RecruitechTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography,
+        typography = RecruitechTypography,
         content = content
     )
 }

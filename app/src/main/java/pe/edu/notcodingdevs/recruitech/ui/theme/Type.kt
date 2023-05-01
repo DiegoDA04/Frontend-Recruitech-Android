@@ -5,43 +5,61 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import pe.edu.notcodingdevs.recruitech.R
 
 // Recruitech Typography
 
-val RubikFont = FontFamily(
-    Font(R.font.rubik_light, FontWeight.Light),
-    Font(R.font.rubik_regular, FontWeight.Normal),
-    Font(R.font.rubik_medium, FontWeight.Medium),
-    Font(R.font.rubik_semibold, FontWeight.SemiBold)
+val LatoFont = FontFamily(
+    Font(R.font.lato_thin, FontWeight.Thin),
+    Font(R.font.lato_light, FontWeight.Light),
+    Font(R.font.lato_regular, FontWeight.Normal),
+    Font(R.font.lato_bold, FontWeight.Bold),
+    Font(R.font.lato_black, FontWeight.Black)
 )
 
 // Set of Material typography styles to start with
-val Typography = Typography(
+val RecruitechTypography = Typography(
+
+    headlineMedium = TextStyle(
+        fontFamily = LatoFont,
+        fontWeight = FontWeight.Black,
+        fontSize = 30.sp,
+        textAlign = TextAlign.Left,
+        color = Grey50
+    ),
     bodyLarge = TextStyle(
-        fontFamily = RubikFont,
+        fontFamily = LatoFont,
         fontWeight = FontWeight.Normal,
         fontSize = 20.sp,
     ),
     bodyMedium = TextStyle(
-        fontFamily = RubikFont,
+        fontFamily = LatoFont,
         fontWeight = FontWeight.Normal,
         fontSize = 16.sp,
+        letterSpacing = 0.25.sp
+    ),
+    bodySmall = TextStyle(
+        fontFamily = LatoFont,
+        fontWeight = FontWeight.Normal,
+        fontSize = 12.sp,
     ),
     labelLarge = TextStyle(
-        fontFamily = RubikFont,
-        fontWeight = FontWeight.Medium,
+        fontFamily = LatoFont,
+        fontWeight = FontWeight.Bold,
         fontSize = 18.sp,
     ),
     labelMedium = TextStyle(
-        fontFamily = RubikFont,
-        fontWeight = FontWeight.Medium,
+        fontFamily = LatoFont,
+        fontWeight = FontWeight.Bold,
         fontSize = 16.sp,
+        letterSpacing = 0.5.sp
     ),
     labelSmall = TextStyle(
-        fontFamily = RubikFont,
-        fontWeight = FontWeight.Medium,
+        fontFamily = LatoFont,
+        fontWeight = FontWeight.Normal,
         fontSize = 14.sp,
     )
     /* Other default text styles to override

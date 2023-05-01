@@ -16,7 +16,11 @@ val Blue40 = Color(0xFF3949AB)
 
 val SkyBlue10 = Color(0xFFF5F7FF)
 
-val Grey40 = Color(0xFF5F5F5F)
+val Grey50 = Color(0xFF0C1E38)
+val Grey40 = Color(0xFF465468)
+val Grey30 = Color(0xFF0C1E38)
 val Grey20 = Color(0xFF8D8D8D)
 val Grey10 = Color(0XFFE1E1E1)
+
+val White30 = Color(0xFFF8FAFB)
 
