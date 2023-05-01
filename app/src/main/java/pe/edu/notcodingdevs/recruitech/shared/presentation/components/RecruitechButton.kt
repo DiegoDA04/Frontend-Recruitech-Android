@@ -26,7 +26,7 @@ fun RecruitechButton(
             containerColor = Blue40,
             contentColor = Color.White
         ),
-        contentPadding = PaddingValues(vertical = 16.dp)
+        contentPadding = PaddingValues(vertical = 18.dp)
     ) {
         Text(
             text = text,
