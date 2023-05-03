@@ -12,9 +12,8 @@ val Pink40 = Color(0xFF7D5260)
 
 // Recruitech - Colors
 
+val Blue80 = Color(0xFF0C1E38)
 val Blue40 = Color(0xFF3949AB)
-
-val SkyBlue10 = Color(0xFFF5F7FF)
 
 val Grey40 = Color(0xFF5F5F5F)
 val Grey20 = Color(0xFF8D8D8D)
