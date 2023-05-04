@@ -66,7 +66,7 @@ fun ChannelsScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(White30)
+            .background(Color.White)
             .padding(horizontal = 30.dp)
     ) {
         Box(

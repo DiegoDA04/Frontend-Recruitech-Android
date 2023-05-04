@@ -49,8 +49,6 @@ import pe.edu.notcodingdevs.recruitech.messages.domain.model.Message
 import pe.edu.notcodingdevs.recruitech.ui.theme.Blue40
 import pe.edu.notcodingdevs.recruitech.ui.theme.Grey20
 import pe.edu.notcodingdevs.recruitech.ui.theme.Grey40
-import pe.edu.notcodingdevs.recruitech.ui.theme.SkyBlue10
-import pe.edu.notcodingdevs.recruitech.ui.theme.White30
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter", "MutableCollectionMutableState")
 @Composable
@@ -65,7 +63,7 @@ fun ChatScreen() {
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(White30)
+            .background(Color.White)
     ) {
         TopContactBar()
         Box(
@@ -159,7 +157,7 @@ fun MessageItem(message: Message) {
             ElevatedCard(
                 modifier = Modifier.padding(10.dp),
                 colors = CardDefaults.cardColors(
-                    containerColor = SkyBlue10
+                    containerColor = Color(0xFFE1F5FE)
                 ),
                 elevation = CardDefaults.cardElevation(0.dp)
             ) {
