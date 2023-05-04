@@ -10,6 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import pe.edu.notcodingdevs.recruitech.recruitment.presentation.job_detail.JobDetailScreen
+import pe.edu.notcodingdevs.recruitech.recruitment.presentation.jobs.JobsScreen
 import pe.edu.notcodingdevs.recruitech.ui.theme.RecruitechTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,30 +19,9 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             RecruitechTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+
+                JobsScreen()
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    RecruitechTheme {
-        Greeting("Android")
     }
 }

@@ -64,15 +64,19 @@ dependencies {
     debugImplementation 'androidx.compose.ui:ui-tooling'
     debugImplementation 'androidx.compose.ui:ui-test-manifest'
 
-    // Navigation
+    // Compose Navigation
     def nav_version = "2.5.3"
 
     implementation "androidx.navigation:navigation-compose:$nav_version"
+
+    // LiveData
+    implementation "androidx.compose.runtime:runtime-livedata:1.4.3"
 
     // Networking
     def retrofit_version = "2.9.0"
 
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
 
     // Room
     def room_version = '2.5.1'
