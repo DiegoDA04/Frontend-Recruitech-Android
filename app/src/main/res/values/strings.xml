@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Recruitech</string>
+    <string name="api_key">vc8ky4fvsu8c</string>
+    <string name="jwt_token">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiamFja2lkIn0.-ButyB4O4Y-TrR2jNK1A_1cRBJUgRqJ5LmITUPSXtzk</string>
+<!--    jackid  -->
 </resources>
