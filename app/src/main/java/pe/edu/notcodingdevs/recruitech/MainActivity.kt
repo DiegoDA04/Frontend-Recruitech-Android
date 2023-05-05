@@ -10,6 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import pe.edu.notcodingdevs.recruitech.Profile.data.model.DigitalProfile
+import pe.edu.notcodingdevs.recruitech.Profile.data.screens.DigitalProfiles
 import pe.edu.notcodingdevs.recruitech.ui.theme.RecruitechTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,8 +23,24 @@ class MainActivity : ComponentActivity() {
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
+
                 ) {
-                    Greeting("Android")
+                    var digitalProfile = DigitalProfile(
+                        id = "123687",
+                        firstName = "Juan",
+                        lastName = "Cruz",
+                        email = " ",
+                        phone = "",
+                        password = "",
+                        role = "Junior Developer",
+                        description = "Lorem ipsum dolor sit amet, " +
+                                "consectetur adipiscing elit. Integer " +
+                                "vulputate molestie turpis fermentum hendrerit. " +
+                                "Donec sit amet auctor diam.",
+                        image = " ",
+                        bannerImage = ""
+                    )
+                    DigitalProfiles(digitalProfile, Modifier.fillMaxSize())
                 }
             }
         }

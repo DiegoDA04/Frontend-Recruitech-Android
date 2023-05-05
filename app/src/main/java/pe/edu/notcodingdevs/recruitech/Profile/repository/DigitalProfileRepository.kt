@@ -16,7 +16,7 @@ class DigitalProfileRepository(
     private val _digitalProfile = MutableLiveData<List<DigitalProfile>>(emptyList())
     val digitalProfile get() = _digitalProfile
 
-    fun fetchById(name: String) {
+    fun fetchById(id: String) {
         val fetchByName = digitalProfilesService.fetchById(id = String())
 
         fetchByName.enqueue(object : Callback<DigitalProfilesResponse> {
